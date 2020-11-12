@@ -1,4 +1,4 @@
-package cl.prezdev.model;
+package cl.prezdev.model.util;
 
 public class Util {
     public static String format(int number) {

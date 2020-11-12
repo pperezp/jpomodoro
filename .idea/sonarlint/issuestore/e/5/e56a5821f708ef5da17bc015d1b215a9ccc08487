@@ -1,4 +1,3 @@
 
-f
-java:S3252	"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢°ù¥8›Õº™€.
-X	java:S125"<This block of commented-out lines of code should be removed.(üä∆”8ªâ ™€.
+]
+java:S2184"@Cast one of the operands of this integer division to a "double".(‘îõ∆8¸ïó…€.

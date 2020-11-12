@@ -1,15 +1,16 @@
 package cl.prezdev;
 
-import cl.prezdev.listeners.LabelPomodoroMouseListener;
-import cl.prezdev.model.PomodoroPrintable;
-import cl.prezdev.model.Util;
+import cl.prezdev.view.listeners.LabelPomodoroMouseListener;
+import cl.prezdev.model.pomodoro.AbstractPomodoro;
+import cl.prezdev.model.pomodoro.PomodoroEvent;
+import cl.prezdev.model.util.Util;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.swing.*;
 
 @Getter @Setter
-public class MainFrame implements PomodoroPrintable {
+public class MainFrame implements PomodoroEvent {
     private JPanel containerPanel;
     private JLabel pomodoroLabel;
 
@@ -25,5 +26,8 @@ public class MainFrame implements PomodoroPrintable {
         pomodoroLabel.setText(formatMinute + ":" + formatSecond);
     }
 
+    @Override
+    public void pomodoroFinished(AbstractPomodoro pomodoroImpl) {
 
+    }
 }

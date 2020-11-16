@@ -4,14 +4,13 @@ import javax.swing.*;
 
 public class App {
     public static void main( String[] args ) {
-        JFrame jframe = new JFrame("Main Frame");
+        JFrame mainFrame = new JFrame("Main Frame");
 
-        jframe.setContentPane(new MainFrame().getContainerPanel());
-        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jframe.pack();
-        jframe.setBounds(jframe.getX(), jframe.getY(), 150, 29);
-
-        jframe.setAlwaysOnTop(true);
-        jframe.setVisible(true);
+        mainFrame.setContentPane(new MainFrame().getContainerPanel());
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //mainFrame.pack();
+        mainFrame.setBounds(mainFrame.getX(), mainFrame.getY(), 150, 80);
+        mainFrame.setAlwaysOnTop(true);
+        mainFrame.setVisible(true);
     }
 }

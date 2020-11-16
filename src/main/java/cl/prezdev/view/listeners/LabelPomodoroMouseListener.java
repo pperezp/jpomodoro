@@ -1,8 +1,8 @@
 package cl.prezdev.view.listeners;
 
-import cl.prezdev.model.pomodoro.AbstractPomodoro;
-import cl.prezdev.model.pomodoro.Pomodoro;
 import cl.prezdev.model.pomodoro.PomodoroEvent;
+import cl.prezdev.model.util.Util;
+import cl.prezdev.service.PomodoroService;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -10,7 +10,6 @@ import java.awt.event.MouseEvent;
 public class LabelPomodoroMouseListener extends MouseAdapter {
 
     private PomodoroEvent pomodoroEvent;
-    private AbstractPomodoro pomodoro;
 
     public LabelPomodoroMouseListener(PomodoroEvent pomodoroEvent) {
         this.pomodoroEvent = pomodoroEvent;
@@ -18,9 +17,8 @@ public class LabelPomodoroMouseListener extends MouseAdapter {
 
     @Override
     public void mouseReleased(MouseEvent mouseEvent) {
-        if(mouseEvent.getClickCount() == 2){
-            pomodoro = new Pomodoro(pomodoroEvent);
-            pomodoro.start();
+        if(Util.isDoubleClick(mouseEvent)){
+            PomodoroService.tryToCreatePomodoro(pomodoroEvent);
         }
     }
 }

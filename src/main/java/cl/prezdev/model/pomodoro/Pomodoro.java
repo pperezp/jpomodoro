@@ -1,14 +1,17 @@
 package cl.prezdev.model.pomodoro;
 
-import cl.prezdev.model.config.Config;
-import lombok.Getter;
-import lombok.Setter;
+public interface Pomodoro extends Runnable{
+    void addPomodoroEvent(PomodoroEvent pomodoroEvent);
 
-@Getter @Setter
-public class Pomodoro extends AbstractPomodoro{
+    void start();
 
-    public Pomodoro(PomodoroEvent pomodoroEvent) {
-        super(Config.Pomodoro.minutes, Config.Pomodoro.activity, pomodoroEvent);
-    }
+    void pause();
 
+    void resume();
+
+    void stop();
+
+    boolean isAlive();
+
+    String info();
 }

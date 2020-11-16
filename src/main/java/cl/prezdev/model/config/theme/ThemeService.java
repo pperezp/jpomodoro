@@ -1,5 +1,9 @@
 package cl.prezdev.model.config.theme;
 
+import cl.prezdev.model.config.theme.themes.DarkTheme;
+import cl.prezdev.model.config.theme.themes.LightTheme;
+import cl.prezdev.model.config.theme.themes.Theme;
+
 import java.util.ArrayList;
 import java.util.List;
 

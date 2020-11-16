@@ -1,4 +1,6 @@
-package cl.prezdev.model.config.theme;
+package cl.prezdev.model.config.theme.themes;
+
+import cl.prezdev.model.config.theme.ThemeName;
 
 import java.awt.*;
 

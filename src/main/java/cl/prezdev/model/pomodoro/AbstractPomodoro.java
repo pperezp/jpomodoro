@@ -33,7 +33,7 @@ public abstract class AbstractPomodoro implements Pomodoro{
     @SneakyThrows
     public void run() {
         invokePrintPomodoroTimerEvents(this.minutes, 0);
-        Thread.sleep(1000);
+        Thread.sleep(Config.Share.PAUSE);
         this.minutes--;
 
         for(int minute = this.minutes; minute >= 0 ; minute--){

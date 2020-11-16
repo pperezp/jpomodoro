@@ -1,7 +1,7 @@
 package cl.prezdev;
 
 import cl.prezdev.model.config.Config;
-import cl.prezdev.model.config.theme.Theme;
+import cl.prezdev.model.config.theme.themes.Theme;
 import cl.prezdev.model.pomodoro.types.BreakPomodoroImpl;
 import cl.prezdev.model.pomodoro.types.PomodoroImpl;
 import cl.prezdev.view.listeners.LabelPomodoroMouseListener;
@@ -45,6 +45,6 @@ public class MainFrame implements PomodoroEvent {
 
     @Override
     public void pomodoroFinished(AbstractPomodoro pomodoroImpl) {
-
+        JOptionPane.showMessageDialog(null,"Pomodoro terminado");
     }
 }

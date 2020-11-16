@@ -1,6 +1,6 @@
 package cl.prezdev.model.config;
 
-import cl.prezdev.model.config.theme.Theme;
+import cl.prezdev.model.config.theme.themes.Theme;
 import cl.prezdev.model.config.theme.ThemeName;
 import cl.prezdev.model.config.theme.ThemeService;
 
